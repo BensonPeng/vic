@@ -121,8 +121,20 @@
               "devServerTarget": "vic:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/vic/",
+            "name": "BensonPeng",
+            "email": "benson_peng@outlook.com"
+          }
         }
       }
-    }},
-  "defaultProject": "vic"
+    }
+  },
+  "defaultProject": "vic",
+  "cli": {
+    "analytics": false
+  }
 }
