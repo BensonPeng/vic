@@ -6,18 +6,20 @@ import { HomeComponent } from './home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AngularMaterialModule } from '../angular-material.module';
+import { PagesModule } from './../pages/pages.module';
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    PagesModule
   ]
 })
 export class HomeModule { }

@@ -6,8 +6,8 @@ import { Page404Component } from './page404/page404.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: '**', component: Page404Component }
+  // { path: 'home', component: HomeComponent },
+  { path: '404', component: Page404Component }
 ];
 
 @NgModule({
