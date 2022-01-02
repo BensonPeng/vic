@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home.component';
 import { PagesRoutingModule } from './../pages/pages-routing.module';
-// import { PagesRouter } from '../pages/pages.routing';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, loadChildren: () => PagesRoutingModule }
