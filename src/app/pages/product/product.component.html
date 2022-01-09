@@ -2,7 +2,9 @@
   <div class="row">
     <ng-container *ngFor="let item of productList">
       <div class="card col-3">
-        <img [src]="item.image" [alt]="item.description" />
+        <div class="card-img">
+          <img [src]="item.image" [alt]="item.description" />
+        </div>
         <h5>{{ item.title }}</h5>
         <p><strong>Price:</strong>　$ {{ item.price }}</p>
         <p>{{ item.description }}</p>
